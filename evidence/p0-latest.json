@@ -1,0 +1,766 @@
+{
+  "status": "passed",
+  "created_at": "2026-11-04T08:08:24.415534+00:00",
+  "project": "/data3/xzx/MetaRoboOS",
+  "work": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression",
+  "checks": [
+    {
+      "name": "installed_package_boundaries",
+      "status": "passed",
+      "paths": {
+        "roborsi.contracts": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/lib/python3.11/site-packages/roborsi/contracts/__init__.py",
+        "metaos_contracts": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/lib/python3.11/site-packages/metaos_contracts/__init__.py",
+        "metaos_mock_arm": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/lib/python3.11/site-packages/metaos_mock_arm/__init__.py",
+        "metaos_runtime": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/lib/python3.11/site-packages/metaos_runtime/__init__.py"
+      }
+    },
+    {
+      "name": "sdk-only_tests",
+      "status": "passed",
+      "count": 8,
+      "report": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only-tests.json"
+    },
+    {
+      "name": "producer_tests",
+      "status": "passed",
+      "count": 36,
+      "report": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer-tests.json"
+    },
+    {
+      "name": "generic_two_node_plan",
+      "status": "passed",
+      "fingerprint": "de86047ea724a0a979471a35e19c81855478b1d84a374eda5219b96d1d75cc34",
+      "order": [
+        "arm",
+        "monitor"
+      ]
+    },
+    {
+      "name": "lock_drift_rejected_before_open",
+      "status": "passed"
+    },
+    {
+      "name": "offline_relocated_cold_install",
+      "status": "passed",
+      "original_input_removed": true,
+      "fingerprint": "cf7388c6021d7f7c6d1055c1329673b18ba264bd1c036fcb82861c547fb09870",
+      "imports": {
+        "metaos_runtime": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/lib/python3.11/site-packages/metaos_runtime/__init__.py",
+        "metaos_contracts": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/lib/python3.11/site-packages/metaos_contracts/__init__.py",
+        "metaos_mock_arm": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/lib/python3.11/site-packages/metaos_mock_arm/__init__.py",
+        "roborsi.contracts": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/lib/python3.11/site-packages/roborsi/contracts/__init__.py"
+      },
+      "packages": [
+        "annotated-types",
+        "attrs",
+        "jsonschema",
+        "jsonschema-specifications",
+        "metaos-contracts",
+        "metaos-mock-arm",
+        "metaos-runtime",
+        "packaging",
+        "pydantic",
+        "pydantic-core",
+        "pyyaml",
+        "referencing",
+        "roborsi-sdk",
+        "rpds-py",
+        "typing-extensions",
+        "typing-inspection"
+      ]
+    },
+    {
+      "name": "cold_actions_and_cleanup",
+      "status": "passed",
+      "scenarios": [
+        "normal",
+        "cancel",
+        "expire"
+      ],
+      "report": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold-actions.json",
+      "shutdown": {
+        "status": "closed",
+        "handles_closed": true,
+        "active_leases": 0,
+        "pid": 658918
+      }
+    },
+    {
+      "name": "tampered-content_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "missing-wheel_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "unknown-schema_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "identity_and_existing_target_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "installed_code_tamper_rejected_and_restored",
+      "status": "passed"
+    },
+    {
+      "name": "plugin_removal_and_restore",
+      "status": "passed",
+      "unrelated_packages_unchanged": true
+    },
+    {
+      "name": "owned_process_cleanup",
+      "status": "passed",
+      "processes": [
+        {
+          "pid": 651301,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_cancel_is_separate_from_device_stop_confirmation-6bzyzixu/process.json"
+        },
+        {
+          "pid": 651697,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_command_validity_expiry_stops_inflight_action-ihpstnwp/process.json"
+        },
+        {
+          "pid": 651981,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_complete_motion_and_native_state-9s6rh8qu/process.json"
+        },
+        {
+          "pid": 652235,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_concurrent_control_and_authenticated_owner-tg1cg3eh/process.json"
+        },
+        {
+          "pid": 652506,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_device_failure_confirms_stop_and_records_failure-6cfck5ky/process.json"
+        },
+        {
+          "pid": 652700,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_expired_lease_stops_action_after_real_caller_exits-_fu8ht2a/process.json"
+        },
+        {
+          "pid": 653021,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_gateway_shutdown_stops_action_and_clears_leases-c19evdol/process.json"
+        },
+        {
+          "pid": 653855,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_invalid_expired_and_semantically_incompatible_actions-bbake5ya/process.json"
+        },
+        {
+          "pid": 654186,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_lost_submit_response_is_queried_without_duplicate_execution-an39898m/process.json"
+        },
+        {
+          "pid": 654390,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_old_fencing_epoch_after_release_is_rejected-kt93pi0x/process.json"
+        },
+        {
+          "pid": 654593,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_other_caller_cannot_query_or_cancel_command-e2qlg14m/process.json"
+        },
+        {
+          "pid": 654889,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_release_stops_inflight_action_before_next_owner-smp676y3/process.json"
+        },
+        {
+          "pid": 655259,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_renewal_extends_current_lease_without_changing_epoch-4h9wwl3_/process.json"
+        },
+        {
+          "pid": 655480,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_simultaneous_acquire_has_exactly_one_owner-q0o42i8q/process.json"
+        },
+        {
+          "pid": 655720,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_stale_device_state_is_rejected_before_execution-u55c2lkd/process.json"
+        },
+        {
+          "pid": 655856,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_unauthenticated_requests_and_resource_acl-d2ydeyq0/process.json"
+        },
+        {
+          "pid": 656063,
+          "exit_code": 0,
+          "evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence/test_unconfirmed_stop_quarantines_resource-007rhr80/process.json"
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "plan",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/temporary-system-input/system.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/temporary-system-input",
+        "--lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/system.lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/plan.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/plan.stderr"
+    },
+    {
+      "name": "changed-lock",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "serve",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/changed-system.json",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/temporary-system-input",
+        "--lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/system.lock.json",
+        "--workspace",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/must-not-open",
+        "--credentials",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/credentials.json",
+        "--ready-file",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/never-ready.json"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/changed-lock.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/changed-lock.stderr"
+    },
+    {
+      "name": "export",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "export",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/temporary-system-input/system.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/temporary-system-input",
+        "--wheelhouse",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/wheels",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/export/p0-deployment"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/export.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/export.stderr"
+    },
+    {
+      "name": "cold-install",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold",
+        "--expect-fingerprint",
+        "cf7388c6021d7f7c6d1055c1329673b18ba264bd1c036fcb82861c547fb09870"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-install.stderr"
+    },
+    {
+      "name": "cold-verify",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+        "--installed",
+        "--expect-fingerprint",
+        "cf7388c6021d7f7c6d1055c1329673b18ba264bd1c036fcb82861c547fb09870"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-verify.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-verify.stderr"
+    },
+    {
+      "name": "cold-imports",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "-c",
+        "\nimport importlib, importlib.util, json, sys\nfrom pathlib import Path\npaths={n:str(Path(importlib.import_module(n).__file__).resolve()) for n in [\"metaos_runtime\",\"metaos_contracts\",\"metaos_mock_arm\",\"roborsi.contracts\"]}\nassert all(Path(p).is_relative_to(Path(sys.prefix).resolve()) for p in paths.values())\nassert all(importlib.util.find_spec(n) is None for n in [\"roborsi.evaluation\",\"roborsi.assembly\",\"torch\"])\nprint(json.dumps(paths))\n"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-imports.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-imports.stderr"
+    },
+    {
+      "name": "cold-actions",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/scripts/exercise_p0.py",
+        "--ready-file",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold-ready.json",
+        "--credentials",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/credentials.json",
+        "--mode",
+        "all",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold-actions.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-actions.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/cold-actions.stderr"
+    },
+    {
+      "name": "tampered-content",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/tampered-content"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tampered-content.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tampered-content.stderr"
+    },
+    {
+      "name": "tampered-content-install",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/tampered-content/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/tampered-content-install"
+      ],
+      "exit_code": 1,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tampered-content-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tampered-content-install.stderr"
+    },
+    {
+      "name": "missing-wheel",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/missing-wheel"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-wheel.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-wheel.stderr"
+    },
+    {
+      "name": "missing-wheel-install",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/missing-wheel/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/missing-wheel-install"
+      ],
+      "exit_code": 1,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-wheel-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-wheel-install.stderr"
+    },
+    {
+      "name": "unknown-schema",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/unknown-schema"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/unknown-schema.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/unknown-schema.stderr"
+    },
+    {
+      "name": "unknown-schema-install",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/unknown-schema/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/negative/unknown-schema-install"
+      ],
+      "exit_code": 1,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/unknown-schema-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/unknown-schema-install.stderr"
+    },
+    {
+      "name": "wrong-fingerprint",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+        "--expect-fingerprint",
+        "0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/wrong-fingerprint.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/wrong-fingerprint.stderr"
+    },
+    {
+      "name": "existing-install-target",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold"
+      ],
+      "exit_code": 1,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/existing-install-target.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/existing-install-target.stderr"
+    },
+    {
+      "name": "installed-code-tamper",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+        "--installed"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/installed-code-tamper.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/installed-code-tamper.stderr"
+    },
+    {
+      "name": "restored-code",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+        "--installed"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/restored-code.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/restored-code.stderr"
+    },
+    {
+      "name": "uninstall-device",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "uninstall",
+        "-y",
+        "metaos-mock-arm"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/uninstall-device.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/uninstall-device.stderr"
+    },
+    {
+      "name": "plugins-after-uninstall",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "plugins"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/plugins-after-uninstall.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/plugins-after-uninstall.stderr"
+    },
+    {
+      "name": "missing-plugin",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment/system.json",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment/project"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-plugin.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/missing-plugin.stderr"
+    },
+    {
+      "name": "reinstall-device",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-index",
+        "--no-cache-dir",
+        "--no-deps",
+        "--find-links",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/wheels",
+        "metaos-mock-arm==0.1.0"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/reinstall-device.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/reinstall-device.stderr"
+    },
+    {
+      "name": "restored-plugin",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_runtime",
+        "bundle",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+        "--installed"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/restored-plugin.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/restored-plugin.stderr"
+    }
+  ],
+  "artifacts": {
+    "producer_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+    "cold_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold/bin/python",
+    "deployment": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/relocated/p0-deployment",
+    "credentials": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/credentials.json",
+    "cold_runtime": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/cold-runtime",
+    "test_evidence": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/test-evidence"
+  },
+  "demo_regression": {
+    "status": "passed",
+    "checks": 10,
+    "summary": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/acceptance-summary.json",
+    "artifacts": {
+      "plugin_wheel": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/wheels/roborsi_manual_counter-1.0.0-py3-none-any.whl",
+      "producer_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+      "cold_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/bin/python",
+      "deployment": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment",
+      "cold_workspace": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold-run"
+    }
+  },
+  "duration_s": 314.38,
+  "bootstrap_commands": [
+    {
+      "name": "build-packages",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "wheel",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-cache-dir",
+        "--wheel-dir",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/wheels",
+        "/data3/xzx/MetaRoboOS/packages/metaos-contracts",
+        "/data3/xzx/MetaRoboOS/packages/metaos-runtime",
+        "/data3/xzx/MetaRoboOS/plugins/mock-arm"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/build-packages.log"
+    },
+    {
+      "name": "install-producer",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-index",
+        "--no-cache-dir",
+        "--find-links",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/wheels",
+        "metaos-runtime==0.2.0",
+        "metaos-mock-arm==0.1.0"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/install-producer.log"
+    },
+    {
+      "name": "pip-check-producer",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/pip-check-producer.log"
+    },
+    {
+      "name": "tests-producer",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/scripts/run_p0_tests.py",
+        "--tests",
+        "/data3/xzx/MetaRoboOS/tests/p0",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer-tests.json"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tests-producer.log"
+    },
+    {
+      "name": "install-sdk-only",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-index",
+        "--no-cache-dir",
+        "--find-links",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/wheels",
+        "metaos-mock-arm==0.1.0"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/install-sdk-only.log"
+    },
+    {
+      "name": "pip-check-sdk-only",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/pip-check-sdk-only.log"
+    },
+    {
+      "name": "tests-sdk-only",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/scripts/run_p0_tests.py",
+        "--tests",
+        "/data3/xzx/MetaRoboOS/tests/p0",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only-tests.json",
+        "--sdk-only"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/tests-sdk-only.log"
+    },
+    {
+      "name": "verify-delivery",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/scripts/verify_p0.py",
+        "--project",
+        "/data3/xzx/MetaRoboOS",
+        "--work",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression",
+        "--launcher",
+        "/opt/miniconda3/bin/python"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/verify-delivery.log"
+    },
+    {
+      "name": "original-demo-regression",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/modularize-demo/scripts/bootstrap.py",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression"
+      ],
+      "exit_code": 0,
+      "log": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/logs/original-demo-regression.log"
+    }
+  ]
+}

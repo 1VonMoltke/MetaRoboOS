@@ -1,0 +1,20 @@
+api: metaos.harness-spec/v1
+name: roborsi-libero-campaign
+entrypoint: campaign
+components:
+  executor:
+    component: executor.roborsi_local
+    config:
+      bundle: work/roborsi-campaign/episode-bundle
+      composer: ./metaos-local
+      composer_script: scripts/metaos_local.py
+      verifier: scripts/verify_roborsi_run.py
+      timeout_s: 14400
+  campaign:
+    component: campaign.roborsi_libero
+    bindings: {executor: executor}
+    config:
+      count: 10
+      selection: stratified
+      selection_seed: 0
+      infra_retries: 1

@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/producer/bin/python",
+  "sdk_only": false,
+  "count": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "id": "test_local.LocalCompositionTests.test_actual_actions_cancel_expire_and_cleanup",
+      "status": "passed",
+      "duration_s": 14.4827
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_application_failure_still_cleans_system",
+      "status": "passed",
+      "duration_s": 9.0401
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_bundle_edit_is_rejected",
+      "status": "passed",
+      "duration_s": 0.4504
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_content_drift_rejected_before_run_is_created",
+      "status": "passed",
+      "duration_s": 0.6152
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_dependency_errors_and_unknown_placeholders",
+      "status": "passed",
+      "duration_s": 0.0417
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_existing_offline_installer_and_preexecution_validation",
+      "status": "passed",
+      "duration_s": 17.9372
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_missing_credential_rejected_without_starting_os",
+      "status": "passed",
+      "duration_s": 0.8722
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_path_escape_and_cycles_are_rejected",
+      "status": "passed",
+      "duration_s": 0.0085
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_service_loss_cancels_experiment",
+      "status": "passed",
+      "duration_s": 9.1762
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_service_outputs_and_real_http_readiness",
+      "status": "passed",
+      "duration_s": 7.1126
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_timeout_stops_owned_application_and_system",
+      "status": "passed",
+      "duration_s": 11.8425
+    },
+    {
+      "id": "test_local.LocalCompositionTests.test_tree_addition_is_drift",
+      "status": "passed",
+      "duration_s": 0.6331
+    }
+  ]
+}

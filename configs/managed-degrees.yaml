@@ -1,0 +1,18 @@
+schema_version: 1
+api: metaos.system/v1
+components:
+  arm:
+    component: embodiment.mock_arm
+    version: '>=0.1,<0.2'
+    config:
+      resource_id: robots/internal-arm
+  degrees:
+    component: embodiment.joint_degrees
+    version: '>=0.1,<0.2'
+    config:
+      resource_id: robots/degrees-arm
+    bindings:
+      device: arm
+exports: [degrees]
+resources:
+  degrees: robots/degrees-arm

@@ -1,0 +1,39 @@
+{
+  "source": "SenseNova-RoboRSI M5 counter deployment",
+  "source_deployment_fingerprint": "bd72801846be41e0c40fe412e6a128f4fc97bc2774de2987c4e8aa8ca7cc8f77",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.11",
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "wheels": {
+    "annotated_types-0.8.0-py3-none-any.whl": "dfed23962066380bae9edf1ef856436172bc5eaf060a8e9be8615da517b2ae82",
+    "anyio-4.15.1-py3-none-any.whl": "bcbf6f7791310a604c63bb97a9b9c5f4ef4b26d695545b232e8e7c8ff129265a",
+    "attrs-26.1.0-py3-none-any.whl": "a1a64671a0a6ea854b32fa8ab32cdddab4dc7558cf4564327637893505be9d53",
+    "certifi-2026.10.23-py3-none-any.whl": "aa74e16cbcfd5a2f929c04689f251d9af4c526e4e1bb96d0770b47456970835d",
+    "click-8.5.0-py3-none-any.whl": "161b85a26f61ad51dd32a1e2caf0f4df26b9d30a9ccbeb383421228ffd43cb13",
+    "h11-0.16.0-py3-none-any.whl": "b9e8f7fa8fe15ef1f75a28654cbc37d3955a6705001206dd1214c12aa457f111",
+    "httpcore-1.0.9-py3-none-any.whl": "31aebb8f0458dcb28accef14c2df98997efc081c27a9a0f873b932214be87c99",
+    "httpx-0.28.1-py3-none-any.whl": "2de1c1142f96fb96df99b2d6b451e89dfb3d21ddb83eee49d33e8c4dd58e24c8",
+    "idna-3.20-py3-none-any.whl": "1a532332d4e1b206bd4ac74d62a0730690f0fd32d47dc32f9093421247130ce7",
+    "imageio-2.38.1-py3-none-any.whl": "59084ebf82de67b610045a8e907cf2c32bcbbe63244026f0682e7c2f2f48a42d",
+    "jsonschema-4.26.0-py3-none-any.whl": "5465c75618f519d027c85406bfae5cf33236811de7d150e7ba39baa1775301fa",
+    "jsonschema_specifications-2025.9.1-py3-none-any.whl": "c98b192ebfb2aa76a335c8e161862e74c2192a600f0912517dfb2da24f9c3de8",
+    "numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.whl": "3d8b4245c0141865c943d91922e667a4570e595ac20f516791aa7dbfb149de22",
+    "packaging-26.3-py3-none-any.whl": "858aa6acf78d78716f00bb201ad17d1e46394cb95e0a151be44a1caac3438027",
+    "pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.whl": "14d824661ab4312cd0851a74499d6bec4c1b8dcbef1fff81b4b65fbad95f3690",
+    "pydantic-2.14.1-py3-none-any.whl": "15f8d71ab52c94443918d788c6870a23321b7cc24ea94f33d631f29e59c5e162",
+    "pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.whl": "c3d34ac66afcfa339fab2fae2bec1034480c48edb6db8daaa3bed3d0dd791acc",
+    "pyyaml-6.0.3-cp311-cp311-manylinux_2_17_x86_64.whl": "af86e7b98153550241693d185dd3418f0f094d9d03b3a05185b21c4ee56ce4ea",
+    "referencing-0.37.0-py3-none-any.whl": "ea0ee3f886f0c79e264eea0814dc73ccfb73144397bb37e5f1d74f9403537940",
+    "roborsi-0.1.0-py3-none-any.whl": "68427f48a870bbbb4a4168e4827517ce85256e6d7c38f7e012565856753bf147",
+    "roborsi_example_component-1.0.0-py3-none-any.whl": "090d87125c343d4652f24aa5816e9c4de75d6ecb3fa2ebb0980914ff5d98cf62",
+    "roborsi_sdk-1.0.0-py3-none-any.whl": "4d2a2f635d5194c925b2fce5eaa22160af5580899582ed24488ccc6871755bf0",
+    "rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.whl": "f80c40f5c215f37d38ac2cbbd98b80165ac4cace8d983663f3f774e68819214d",
+    "typing_extensions-4.16.0-py3-none-any.whl": "fb501cc6f042d791d6b04564449e3b7b1874af825a53af00d2c37ed31bc23103",
+    "typing_inspection-0.4.4-py3-none-any.whl": "a8976f7611bc4a13adf9292575632a4c903c39e58f2b37b3e7073d32fc9b1403",
+    "uvicorn-0.54.0-py3-none-any.whl": "a7ebe1dbacb47d9476a30487912f6327438c54e6bfba604f81a91c0490d5f06d"
+  },
+  "notes": "Third-party installed-RECORD snapshots retain their original wheel-provenance.json; not claimed as upstream index wheels."
+}

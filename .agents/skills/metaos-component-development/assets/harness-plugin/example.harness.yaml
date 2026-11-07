@@ -1,0 +1,12 @@
+api: metaos.harness-spec/v1
+name: example-counter-report
+entrypoint: report
+components:
+  counter:
+    component: counter.example
+    version: '==0.1.0'
+    config: {initial: 2}
+  report:
+    component: report.example
+    version: '==0.1.0'
+    bindings: {counter: counter}

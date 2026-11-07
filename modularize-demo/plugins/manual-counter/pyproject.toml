@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roborsi-manual-counter"
+version = "1.0.0"
+description = "An independent SDK-only counter model plugin for RoboRSI"
+requires-python = ">=3.10,<3.13"
+dependencies = ["roborsi-sdk>=1,<2"]
+
+[project.entry-points."roborsi.components"]
+"model.manual_counter" = "roborsi_manual_counter:provider"
+
+[tool.setuptools.packages.find]
+where = ["src"]

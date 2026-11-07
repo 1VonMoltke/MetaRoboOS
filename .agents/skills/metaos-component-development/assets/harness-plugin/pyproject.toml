@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaos-example-components"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = ["metaos-harness==0.1.0"]
+
+[project.entry-points."metaos.harness.components"]
+"counter.example" = "metaos_example_components:counter"
+"report.example" = "metaos_example_components:report"
+
+[tool.setuptools.packages.find]
+where = ["src"]

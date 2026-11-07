@@ -1,0 +1,34 @@
+{
+  "status": "local_composition_qualified_api_single_task_success",
+  "date": "2026-11-06",
+  "scope": "local_path_references_existing_installed_components",
+  "model_inference": true,
+  "remote_27b_contacted": false,
+  "full_harness_graph_compiler": false,
+  "tests_passed": 12,
+  "api_recipe_tests_passed": 2,
+  "latest_experiment": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02",
+  "evidence": {
+    "local_tests": {
+      "path": "/data3/xzx/MetaRoboOS/evidence/local-tests-latest.json",
+      "sha256": "0b531330086b831c8a0f1d46b87e8884d4343748de2dd0c25f8df57b6b6487d9"
+    },
+    "api_recipe_tests": {
+      "path": "/data3/xzx/MetaRoboOS/evidence/api-recipe-tests-latest.json",
+      "sha256": "c8fd84d1ca0b8b20da4e6878c58c73c4d6b4b9ea891c440256957946314613d7"
+    },
+    "real_api_run": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/report.json",
+      "sha256": "2d0e382615437e804aab77f7b9ce48c3e83491be3d2db6a4aed02e911cbb89ea"
+    },
+    "api_index": {
+      "path": "/data3/xzx/MetaRoboOS/evidence/libero-api-latest.json",
+      "sha256": "741bd7482722c7c12027a74d7c2e5912fda1f22d47e433ab506f7523ec8b1aba"
+    }
+  },
+  "remaining": [
+    "Original 27B inference remains externally blocked by GPU memory",
+    "Arbitrary internal Harness graph compilation, remote package retrieval and automatic bare-wheel dependency resolution remain outside local v1"
+  ],
+  "retention": "Older local mock/native-probe runs and repeated builds removed on 2026-11-06 per user request. Current tests, real API result and required deployments retained."
+}

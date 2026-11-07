@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaos-mock-arm"
+version = "0.1.0"
+description = "Independent cooperative two-joint mock device for MetaRoboOS P0"
+requires-python = ">=3.10,<3.13"
+dependencies = ["metaos-contracts>=0.1,<0.3", "roborsi-sdk>=1,<2", "jsonschema>=4.18"]
+
+[project.entry-points."roborsi.components"]
+"embodiment.mock_arm" = "metaos_mock_arm:provider"
+"tool.mock_arm_monitor" = "metaos_mock_arm:monitor_provider"
+
+[tool.setuptools.packages.find]
+where = ["src"]

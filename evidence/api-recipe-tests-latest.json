@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "python": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/cold/bin/python",
+  "sdk_only": false,
+  "count": 2,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "id": "test_api_recipe.ApiRecipeTests.test_credential_url_and_invalid_budgets_rejected_before_creation",
+      "status": "passed",
+      "duration_s": 0.0006
+    },
+    {
+      "id": "test_api_recipe.ApiRecipeTests.test_preparation_and_original_provider_configuration",
+      "status": "passed",
+      "duration_s": 1.6275
+    }
+  ]
+}

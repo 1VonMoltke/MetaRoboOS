@@ -1,0 +1,44 @@
+{
+  "status": "harness_started",
+  "created_at": "2026-11-06T07:37:40.885270+00:00",
+  "pid": 3079946,
+  "identity": {
+    "pid": 3079946,
+    "start_ticks": "129693851",
+    "boot_id": "c503574c-40c4-44c9-9535-f2344cc6651f"
+  },
+  "workspace": "/data3/xzx/MetaRoboOS/work/robocasa-27b-20261106-01",
+  "task_id": "OpenDrawer",
+  "seed": 1,
+  "gpu_device": 5,
+  "model": "sensenova-roborsi-27b-preview",
+  "model_base_url": "http://127.0.0.1:18000/v1",
+  "scope": "single_task",
+  "bundle_fingerprint": "a5fa7026a567c30f8ea0908ee98a0548a5d813e049dbbb725959ce754b3b6f49",
+  "launch_script_sha256": "dfd2a2ac26a5f41dea267a935a2e08d32a0fd06ce8379e4399fc67cd469af877",
+  "log": "/data3/xzx/MetaRoboOS/work/robocasa-27b-20261106-01/launcher.log",
+  "run_report": "/data3/xzx/MetaRoboOS/work/robocasa-27b-20261106-01/run/run.json",
+  "monitoring": false,
+  "task_result": "not_checked",
+  "attempt": 2,
+  "startup_confirmed_at": "2026-11-06T07:38:11.942068+00:00",
+  "runner_status": "running",
+  "processes": [
+    {
+      "alias": "system",
+      "pid": 3079983,
+      "identity": [
+        "129694023",
+        "c503574c-40c4-44c9-9535-f2344cc6651f\n"
+      ]
+    },
+    {
+      "alias": "harness",
+      "pid": 3081673,
+      "identity": [
+        "129696947",
+        "c503574c-40c4-44c9-9535-f2344cc6651f\n"
+      ]
+    }
+  ]
+}

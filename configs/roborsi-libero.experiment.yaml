@@ -1,0 +1,5 @@
+atomic: libero_pick_place
+sim_task: libero_goal_task/0
+seed: 0
+tool_budget: 24
+instruction: Complete the current runtime task with the released LIBERO skills.

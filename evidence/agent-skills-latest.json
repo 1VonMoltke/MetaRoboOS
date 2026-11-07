@@ -1,0 +1,446 @@
+{
+  "api": "metaos.agent-skills-validation/v1",
+  "status": "passed",
+  "checked_at": "2026-11-07T08:15:38.613066+00:00",
+  "skills": [
+    {
+      "name": "metaos-architecture",
+      "format_valid": true,
+      "path": ".agents/skills/metaos-architecture/SKILL.md"
+    },
+    {
+      "name": "metaos-component-development",
+      "format_valid": true,
+      "path": ".agents/skills/metaos-component-development/SKILL.md"
+    },
+    {
+      "name": "metaos-harness-assembly",
+      "format_valid": true,
+      "path": ".agents/skills/metaos-harness-assembly/SKILL.md"
+    }
+  ],
+  "validation": {
+    "relative_links": {
+      "passed": true,
+      "count": 55
+    },
+    "python_syntax": true,
+    "project_routing": true,
+    "installed_plugin_workflow": true,
+    "graph_behavior_tests": 9,
+    "negative_cases": [
+      "invalid_config",
+      "missing_binding",
+      "wrong_contract",
+      "installed_byte_drift"
+    ],
+    "cpu_mock": {
+      "passed": true,
+      "original_output": "/tmp/metaos-agent-skills-buz5hu1e/run",
+      "archived_output": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock-run-localfs",
+      "status": "application_completed",
+      "cleanup_confirmed": true,
+      "handles_closed": true,
+      "active_leases": 0,
+      "all_owned_processes_exited": true,
+      "forced_stop": false,
+      "cases": [
+        {
+          "case": "normal",
+          "status": "succeeded",
+          "reason": null
+        },
+        {
+          "case": "cancel",
+          "status": "cancelled",
+          "reason": "client_cancelled"
+        },
+        {
+          "case": "expire",
+          "status": "cancelled",
+          "reason": "lease_expired"
+        }
+      ]
+    }
+  },
+  "successful_command_checks": [
+    {
+      "name": "three_skills",
+      "passed": true
+    },
+    {
+      "name": "format_metaos-architecture",
+      "passed": true,
+      "message": "Skill is valid!"
+    },
+    {
+      "name": "format_metaos-component-development",
+      "passed": true,
+      "message": "Skill is valid!"
+    },
+    {
+      "name": "format_metaos-harness-assembly",
+      "passed": true,
+      "message": "Skill is valid!"
+    },
+    {
+      "name": "relative_links",
+      "passed": true,
+      "checked": 55,
+      "broken": []
+    },
+    {
+      "name": "isolated_env",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/roborsi-campaign/harness-env/bin/python",
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 5.3,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/isolated_env.log"
+    },
+    {
+      "name": "wheel_build",
+      "passed": true,
+      "command": [
+        "/opt/miniconda3/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-index",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/plugin",
+        "--wheel-dir",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/wheels"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.41,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/wheel_build.log"
+    },
+    {
+      "name": "wheel_install",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/wheels/metaos_example_components-0.1.0-py3-none-any.whl"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 5.51,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/wheel_install.log"
+    },
+    {
+      "name": "component_discovery",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "components"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.21,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/component_discovery.log"
+    },
+    {
+      "name": "registered_example_pair",
+      "passed": true
+    },
+    {
+      "name": "harness_plan",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/plugin/example.harness.yaml"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.16,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness_plan.log"
+    },
+    {
+      "name": "harness_build",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "build",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/plugin/example.harness.yaml",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.16,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness_build.log"
+    },
+    {
+      "name": "harness_verify",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.16,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness_verify.log"
+    },
+    {
+      "name": "host_execution_cleanup",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/plugin/smoke.py",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.17,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/host_execution_cleanup.log"
+    },
+    {
+      "name": "graph_behavior_tests",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/data3/xzx/MetaRoboOS/tests",
+        "-p",
+        "test_harness_graph.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.92,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/graph_behavior_tests.log"
+    },
+    {
+      "name": "reject_invalid_config",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/invalid_config.yaml"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 0.15,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/reject_invalid_config.log"
+    },
+    {
+      "name": "reject_missing_binding",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/missing_binding.yaml"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 0.17,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/reject_missing_binding.log"
+    },
+    {
+      "name": "reject_wrong_contract",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "plan",
+        "--spec",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/wrong_contract.yaml"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 0.15,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/reject_wrong_contract.log"
+    },
+    {
+      "name": "installed_example_location",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-c",
+        "import metaos_example_components as m; print(m.__file__)"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.12,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/installed_example_location.log"
+    },
+    {
+      "name": "reject_installed_drift",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness-bundle"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 0.15,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/reject_installed_drift.log"
+    },
+    {
+      "name": "drift_is_lock_error",
+      "passed": true
+    },
+    {
+      "name": "verify_restored_install",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/env/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "metaos_harness.cli",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/harness-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.66,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/verify_restored_install.log"
+    },
+    {
+      "name": "mock_init",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/metaos-local",
+        "init",
+        "--resources",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/resources"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.15,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock_init.log"
+    },
+    {
+      "name": "mock_plan",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/metaos-local",
+        "plan",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/resources/mock.json",
+        "--resources",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/resources"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 22.38,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock_plan.log"
+    },
+    {
+      "name": "mock_build",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/metaos-local",
+        "build",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/resources/mock.json",
+        "--resources",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/resources",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/local-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 23.56,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock_build.log"
+    },
+    {
+      "name": "mock_verify",
+      "passed": true,
+      "command": [
+        "/data3/xzx/MetaRoboOS/metaos-local",
+        "verify",
+        "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/local-bundle"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.66,
+      "log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock_verify.log"
+    }
+  ],
+  "prior_mock_attempts": [
+    {
+      "run": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock-run/run.json",
+      "status": "application_failed",
+      "cleanup_confirmed": false,
+      "harness_log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock-run/harness.log"
+    },
+    {
+      "run": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock-run-retry/run.json",
+      "status": "application_failed",
+      "cleanup_confirmed": true,
+      "harness_log": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/mock-run-retry/harness.log"
+    }
+  ],
+  "operational_observation": "Two work-disk Mock runs had local HTTP timeouts. A new isolated run on /tmp passed all three action cases and cleanup. The Skill now explains request versus total timeouts, command reconciliation and temporary local-filesystem diagnostics.",
+  "limits": [
+    "No independent agent evaluation",
+    "No model inference or simulator execution",
+    "Validation environments explicitly inherit the existing Harness dependencies; this is not a portable offline distribution"
+  ],
+  "source_sha256": {
+    "AGENTS.md": "fc1bbe901b5b9468b1338e71e6ed09f1c356316471775ebfb003274e86faad53",
+    "README.md": "d16b82b35570a27f34dacaf7cc6d4cf7414c82d201e8c4c498353b15febbbf2b",
+    ".agents/skills/metaos-architecture/SKILL.md": "4342d9c71fb9a0cb608a8b132870f81d7cc6836e716491630767ad3ec4a0d11d",
+    ".agents/skills/metaos-architecture/references/current-architecture.md": "3c0ff6bbe205f78216b53cf5e9611821c40ceaf04bcdaaca545a042bd94e647e",
+    ".agents/skills/metaos-component-development/SKILL.md": "ba474a758e87aa59c9210b5c5eec018ec1b7249a49d699102786535df26bb251",
+    ".agents/skills/metaos-component-development/assets/harness-plugin/example.harness.yaml": "ce98905d7234cb562e39c79d33552f6060bcbdf757196b189e4d8908d8b69ddf",
+    ".agents/skills/metaos-component-development/assets/harness-plugin/pyproject.toml": "d5bec31e98f725ae6b2f910429400a06e8ecc86cb47d40382f702e724a9640ad",
+    ".agents/skills/metaos-component-development/assets/harness-plugin/smoke.py": "161951d2f7c1b5225f151d0929d2c21d573934c39b9a9c37bc7f572e5970ebd3",
+    ".agents/skills/metaos-component-development/assets/harness-plugin/src/metaos_example_components/__init__.py": "443713050c076362b45217fe91ac74bc6dedf0757385a0e0e1362e29c6258dda",
+    ".agents/skills/metaos-component-development/references/harness-provider.md": "8d6e682785205a6f69b90eb47fda27e08ffb7766cf21374ce222e66149ab2212",
+    ".agents/skills/metaos-component-development/references/os-plugin.md": "be70130e3e365295eea12b85a00c54f1889f0b63106a687434ba05d76fb5c639",
+    ".agents/skills/metaos-harness-assembly/SKILL.md": "f518fe7d938241ac6be3f297f648cf6a2d7392478a253a71ffcefe7fdf02ae72",
+    ".agents/skills/metaos-harness-assembly/references/workflows.md": "1d2898a321f2fd28186e1a583cdbb30e9ff02cd708a65b2b68bb42c381e4af53"
+  },
+  "artifacts": {
+    "validation_directory": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl",
+    "report": "/data3/xzx/MetaRoboOS/work/agent-skills-validation-rouvcmyl/final-report.json"
+  }
+}

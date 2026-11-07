@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaos-roborsi-campaign"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+description = "Selectable LIBERO-PRO evaluation campaigns over composed MetaRoboOS episodes"
+dependencies = ["metaos-harness==0.1.0"]
+
+[project.scripts]
+metaos-roborsi-campaign = "metaos_roborsi_campaign.cli:main"
+
+[project.entry-points."metaos.harness.components"]
+"campaign.roborsi_libero" = "metaos_roborsi_campaign.providers:campaign"
+"executor.roborsi_local" = "metaos_roborsi_campaign.providers:executor"
+
+[tool.setuptools.packages.find]
+where = ["src"]

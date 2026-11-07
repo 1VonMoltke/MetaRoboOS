@@ -1,0 +1,14 @@
+schema_version: 1
+api: metaos.system/v1
+components:
+  monitor:
+    component: tool.mock_arm_monitor
+    version: '>=0.1,<0.2'
+    bindings:
+      device: arm
+  arm:
+    component: embodiment.mock_arm
+    version: '>=0.1,<0.2'
+    config:
+      resource_id: robots/mock-arm
+exports: [arm]

@@ -1,0 +1,27 @@
+schema_version: 1
+components:
+  environment:
+    component: environment.example_workflow
+    version: '>=1,<2'
+    config:
+      benchmark: manual_counter_demo
+      goals: [4, 5]
+  model:
+    component: model.manual_counter
+    version: '>=1,<2'
+    config:
+      increment: 2
+  memory:
+    component: context.example_memory
+    version: '>=1,<2'
+    config:
+      file: assets/counter-memory.txt
+  agent:
+    component: agent.example_counter
+    version: '>=1,<2'
+    bindings:
+      model: model
+      context: memory
+entrypoints:
+  agent: agent
+  environment: environment

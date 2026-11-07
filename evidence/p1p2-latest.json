@@ -1,0 +1,274 @@
+{
+  "status": "infrastructure_qualified_real_27b_blocked",
+  "goal_complete": false,
+  "model_inference": false,
+  "created_at": "2026-11-06T03:56:40.091662+00:00",
+  "checks": [
+    {
+      "name": "all_infrastructure_stages",
+      "status": "passed"
+    },
+    {
+      "name": "process_and_semantics_matrix",
+      "status": "passed",
+      "count": 20
+    },
+    {
+      "name": "real_native_full_protocol",
+      "status": "passed"
+    },
+    {
+      "name": "native_clean_shutdown",
+      "status": "passed"
+    },
+    {
+      "name": "offline_native_image_and_declared_assets",
+      "status": "passed"
+    },
+    {
+      "name": "lightweight_os_environment",
+      "status": "passed",
+      "packages": 16
+    },
+    {
+      "name": "p0_and_original_demo_regression",
+      "status": "passed"
+    },
+    {
+      "name": "p0_system_tests",
+      "status": "passed",
+      "count": 36
+    },
+    {
+      "name": "p0_sdk_tests",
+      "status": "passed",
+      "count": 8
+    },
+    {
+      "name": "separate_relocated_harness",
+      "status": "passed"
+    },
+    {
+      "name": "harness_protocol_media_and_failure_tests",
+      "status": "passed",
+      "count": 13
+    },
+    {
+      "name": "harness_delivery_rejects_changed_inputs",
+      "status": "passed"
+    },
+    {
+      "name": "original-inputs",
+      "status": "passed"
+    },
+    {
+      "name": "original-service",
+      "status": "passed"
+    },
+    {
+      "name": "real_gateway_original_case_runner",
+      "status": "passed"
+    },
+    {
+      "name": "harness_preserves_original_budget",
+      "status": "passed"
+    },
+    {
+      "name": "actual_cli_model_failure_cancels_and_releases",
+      "status": "passed"
+    },
+    {
+      "name": "owned_agent_preserves_requested_venv",
+      "status": "passed"
+    },
+    {
+      "name": "past_native_state_is_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "actual_cli_agent_exit_cancels_and_releases",
+      "status": "passed"
+    },
+    {
+      "name": "actual_cli_model_timeout_cancels_and_releases",
+      "status": "passed"
+    },
+    {
+      "name": "real_camera_score_and_mp4",
+      "status": "passed"
+    },
+    {
+      "name": "retained_artifact_bytes",
+      "status": "passed",
+      "artifacts": 178
+    },
+    {
+      "name": "cold_native_media",
+      "status": "passed",
+      "images": 66,
+      "videos": 1
+    },
+    {
+      "name": "harness_native_media",
+      "status": "passed",
+      "images": 63,
+      "videos": 1
+    },
+    {
+      "name": "harness_uses_qualified_os_wheels",
+      "status": "passed"
+    },
+    {
+      "name": "current_source_matches_qualified_wheels",
+      "status": "passed",
+      "packages": 6
+    },
+    {
+      "name": "owned_workers_closed",
+      "status": "passed",
+      "count": 22
+    },
+    {
+      "name": "owned_native_container_removed",
+      "status": "passed",
+      "container_name": "metaos-libero-d26f6455892a44ea"
+    },
+    {
+      "name": "owned_native_container_removed",
+      "status": "passed",
+      "container_name": "metaos-libero-b0183b68542e47a1"
+    },
+    {
+      "name": "owned_native_container_removed",
+      "status": "passed",
+      "container_name": "metaos-libero-ba68e96e88d748e9"
+    },
+    {
+      "name": "owned_native_container_removed",
+      "status": "passed",
+      "container_name": "metaos-libero-4c6f9475828d4e62"
+    },
+    {
+      "name": "owned_native_container_removed",
+      "status": "passed",
+      "container_name": "metaos-libero-733c79bcb243411a"
+    },
+    {
+      "name": "credentials_absent_from_logs",
+      "status": "passed",
+      "checked_secret_count": 186
+    }
+  ],
+  "evidence": {
+    "infrastructure": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/acceptance-summary.json",
+      "sha256": "c3fc1261149b3dbe95c549a0d9d25ced10f0515c8279172670be281238d0ce16"
+    },
+    "p1p2_tests": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p1p2-tests.json",
+      "sha256": "9d99ce3af684e77989769c964f506aee773e3bd31a65b46a52363414fd61eae7"
+    },
+    "cold_native": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/cold-native/report.json",
+      "sha256": "7451dac04199a989181629349aa2546d5db53c707b3e515ef521dab31b36ef88"
+    },
+    "native_shutdown": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/cold-native/managed/shutdown.json",
+      "sha256": "77b37e377c07a5c04da6156504e5201e795963bea4cd55a0cb23c54cdf1482d7"
+    },
+    "system_deployment": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/relocated/deployment/deployment.json",
+      "sha256": "6ec3887b4485725cb5e678fd92cb9007ff2b4c37ee623475ce038c70f6cbc373"
+    },
+    "p0_regression": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/acceptance-summary.json",
+      "sha256": "750b675018c4f907a47546e6e10ccde261cf2165be4bd10da482cd5ccf7bc813"
+    },
+    "p0_system_tests": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/producer-tests.json",
+      "sha256": "b19af49047ed1364cb523436c37f7a446862af19fff3a1844dec382a1c7c4a83"
+    },
+    "p0_sdk_tests": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/sdk-only-tests.json",
+      "sha256": "7a69922697b482a3f66be88ea29483ad32a591222ab6dd4dce57f4e99a6a0fbd"
+    },
+    "harness_deployment": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/acceptance-summary.json",
+      "sha256": "dd413ba2358bee80455c29c712fa521ffba8a96c83cce56f402cc6629e827d9c"
+    },
+    "harness_tests": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/harness-tests.json",
+      "sha256": "112b9ba4d0ec989e3120a101fb984c1e219842ac70994d7e89c5f8268c17d665"
+    },
+    "harness_delivery_negative_tests": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/delivery-negative-tests.json",
+      "sha256": "f04475275d374b64505d11b3bd3d4a7bb7ee066efb29e8b579799bd8076301ff"
+    },
+    "original-inputs": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/original-inputs/report.json",
+      "sha256": "d9909c239d76796942f812f60243f704ff03a0e156b5953c547f282eaf73e961"
+    },
+    "original-service": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/original-service/report.json",
+      "sha256": "beeb03a066ad8513a404f245f66188d31f50095e0cf645459c711dbe28b2888c"
+    },
+    "native_harness": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-native/report.json",
+      "sha256": "785038dcd0a74561d39c4e482477559efa0359af4fc21773ec16be30ee26ec01"
+    },
+    "harness_original_score": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-native/results/native-harness/single-task/native/score.json",
+      "sha256": "8ff33f7af956c983e07ca78b929fc03b01ab0a519237b142c00d29e601153225"
+    },
+    "original_agent_unavailable_model": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-failure/report.json",
+      "sha256": "183417ede5a325ee4f014eaf05c69806624e91df66c37bfaa0427176ec408c42"
+    },
+    "original_agent_agent_exit": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-agent-exit/report.json",
+      "sha256": "9c3cfc6ae49e64e1444d0a7048bb36ec05acfb53bbfc6b7c2dd156aa0db2b4ca"
+    },
+    "original_agent_model_timeout": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-model-timeout/report.json",
+      "sha256": "a47b33c4b39385d443bdd893dd0dc2e8297f5e14774c39568d721ead177fd783"
+    },
+    "cold_native_media": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/cold-native/media-validation.json",
+      "sha256": "d949bd2a39dd2aca015d7462c62b7945ded86ffd0c357e5d6602c84f1fa92790"
+    },
+    "harness_native_media": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-native/media-validation.json",
+      "sha256": "e17650545eee2d81619987dff8af4e441cf06cc1fc4279ffa7cc121a21ecfc0f"
+    },
+    "harness_wheel_provenance": {
+      "path": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/relocated/harness/wheel-provenance.json",
+      "sha256": "146f7ab8d11ea0a022b783dfb115b0db9a1085bca380d1cec1deb6af989f59cc"
+    }
+  },
+  "audit_source": {
+    "path": "/data3/xzx/MetaRoboOS/scripts/verify_p1p2.py",
+    "sha256": "95c096f87a6b310eba0223d9b1b8d853c40a7ca6e601f185789f66b9fa338ff6"
+  },
+  "remaining_acceptance": [
+    {
+      "id": "real_27b_single_task",
+      "status": "blocked_external",
+      "reason": "User reported insufficient GPU memory on the remote machine; the 27B model service cannot start",
+      "reported_date": "2026-11-04",
+      "required": "Original Agent act/model response, gateway actions, native score/video/trace and cleanup"
+    }
+  ],
+  "artifacts": {
+    "producer_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/producer/bin/python",
+    "os_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/cold/bin/python",
+    "system_deployment": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/relocated/deployment",
+    "harness_python": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/cold/bin/python",
+    "harness_deployment": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/relocated/harness",
+    "infrastructure_summary": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/acceptance-summary.json",
+    "harness_summary": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011/acceptance-summary.json",
+    "native_harness_report": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-native/report.json",
+    "failure_harness_report": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-failure/report.json",
+    "agent_exit_harness_report": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-agent-exit/report.json",
+    "model_timeout_harness_report": "/data3/xzx/MetaRoboOS/work/p1p2-harness-011-model-timeout/report.json"
+  }
+}

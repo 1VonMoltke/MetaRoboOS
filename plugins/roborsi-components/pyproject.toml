@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "metaos-roborsi-components"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["metaos-harness==0.1.0", "metaos-roborsi-baseline==0.1.0"]
+[project.entry-points."metaos.harness.components"]
+"orchestrator.roborsi" = "metaos_roborsi.providers:orchestrator"
+"planner.roborsi" = "metaos_roborsi.providers:planner"
+"engineer.roborsi" = "metaos_roborsi.providers:engineer"
+"reviewer.roborsi" = "metaos_roborsi.providers:reviewer"
+"model.roborsi" = "metaos_roborsi.providers:model"
+"context.roborsi" = "metaos_roborsi.providers:context"
+"toolset.roborsi_libero" = "metaos_roborsi.providers:toolset"
+"skills.roborsi_libero" = "metaos_roborsi.providers:skills"
+"skills.compose" = "metaos_roborsi.providers:composed_skills"
+"environment.libero_roborsi" = "metaos_roborsi.providers:environment"
+"evaluator.libero_roborsi" = "metaos_roborsi.providers:evaluator"
+"results.roborsi" = "metaos_roborsi.providers:results"
+[tool.setuptools.packages.find]
+where = ["src"]

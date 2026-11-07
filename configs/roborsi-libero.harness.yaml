@@ -1,0 +1,60 @@
+api: metaos.harness-spec/v1
+name: roborsi-original-libero-frozen
+entrypoint: episode
+components:
+  model:
+    component: model.roborsi
+    version: '==0.1.0'
+    config:
+      role_sessions: stateless
+      transport: chat_completions
+      base_url: https://api.siliconflow.cn/v1
+  skills:
+    component: skills.roborsi_libero
+    version: '==0.1.0'
+  context:
+    component: context.roborsi
+    version: '==0.1.0'
+    bindings: {skills: skills}
+  environment:
+    component: environment.libero_roborsi
+    version: '==0.1.0'
+    config: {resource_id: environments/roborsi-libero}
+  tools:
+    component: toolset.roborsi_libero
+    version: '==0.1.0'
+    bindings: {skills: skills, environment: environment}
+  planner:
+    component: planner.roborsi
+    version: '==0.1.0'
+    config: {model: openai/deepseek-ai/DeepSeek-V4.1-Flash}
+    bindings: {model: model, context: context, tools: tools}
+  engineer:
+    component: engineer.roborsi
+    version: '==0.1.0'
+    config: {model: openai/deepseek-ai/DeepSeek-V4.1-Flash}
+    bindings: {model: model, context: context, tools: tools}
+  reviewer:
+    component: reviewer.roborsi
+    version: '==0.1.0'
+    config: {model: openai/deepseek-ai/DeepSeek-V4.1-Flash}
+    bindings: {model: model, context: context}
+  evaluator:
+    component: evaluator.libero_roborsi
+    version: '==0.1.0'
+    bindings: {environment: environment}
+  results:
+    component: results.roborsi
+    version: '==0.1.0'
+  episode:
+    component: orchestrator.roborsi
+    version: '==0.1.0'
+    config: {max_rounds: 6}
+    bindings:
+      planner: planner
+      engineer: engineer
+      reviewer: reviewer
+      tools: tools
+      environment: environment
+      evaluator: evaluator
+      results: results

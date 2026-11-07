@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaos-robocasa-device"
+version = "0.1.0"
+description = "Independent RoboCasa365 Target50 native HTTP/container device adapter"
+requires-python = ">=3.10,<3.13"
+dependencies = ["metaos-contracts>=0.2,<0.3", "roborsi-sdk>=1,<2", "jsonschema>=4.18"]
+
+[project.entry-points."roborsi.components"]
+"environment.robocasa_device" = "metaos_robocasa_device:provider"
+
+[tool.setuptools.packages.find]
+where = ["src"]

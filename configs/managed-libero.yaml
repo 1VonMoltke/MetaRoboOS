@@ -1,0 +1,15 @@
+schema_version: 1
+api: metaos.system/v1
+components:
+  simulation:
+    component: environment.libero_device
+    version: '>=0.1,<0.2'
+    config:
+      resource_id: environments/libero-pro
+      image: sha256:b3630a7ccb37db5a7397b63a0aeb2eae6835aeeaea99559a5d2d0905eb551212
+      gpu_device: 7
+      protocol_path: assets/libero/protocol.yaml
+      image_observation_tools: true
+exports: [simulation]
+resources:
+  simulation: environments/libero-pro

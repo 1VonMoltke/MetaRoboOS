@@ -1,0 +1,77 @@
+{
+  "api": "metaos.roborsi-evidence/v1",
+  "run": "/data3/xzx/MetaRoboOS/work/roborsi-modular/runs/task03",
+  "bundle_fingerprint": "1f131b7fb7f2a126b677d12b8d7447570ce4a3e3eba7365f6b654718054c1790",
+  "harness_identity": {
+    "run_id": "057a2e4ab86846e7880ffae3f448c083",
+    "fingerprint": "101768ce3c39977a82caec49aded7de29548ae536770ccba5d799dc5560a2944",
+    "experiment": {
+      "atomic": "libero_pick_place",
+      "sim_task": "libero_goal_task/0",
+      "seed": 0,
+      "tool_budget": 24,
+      "instruction": "Complete the current runtime task with the released LIBERO skills."
+    }
+  },
+  "verified": true,
+  "checks": {
+    "outer_completed": true,
+    "owned_process_cleanup": true,
+    "native_owned_process_closed": true,
+    "native_finalized_without_force": true,
+    "worker_handles_closed": true,
+    "owned_identities_exited": true,
+    "owned_pyroki_closed": true,
+    "harness_lease_released": true,
+    "one_reset": true,
+    "one_final_adjudication": true,
+    "gateway_exercised_tools": true,
+    "worker_authority_matches_commands": true,
+    "planner_real_response": true,
+    "model_real_chat_responses": true,
+    "reviewer_real_usage": true,
+    "engineer_real_usage": true,
+    "native_physics_exercised": true,
+    "joint_control_preserved": true,
+    "native_predicate_once": true,
+    "honest_native_verdict": true,
+    "frozen_one_task": true,
+    "video_present": true,
+    "video_decodes": true,
+    "os_artifact_channel_verified": true,
+    "artifact_hashes_match": true,
+    "no_native_verdict_in_role_trace": true
+  },
+  "task_success": false,
+  "task": "libero_goal_task/0",
+  "seed": 0,
+  "physics_ticks": 334,
+  "tool_calls": 29,
+  "model_responses": 35,
+  "video_validation": {
+    "verified": true,
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 256,
+          "height": 256,
+          "nb_frames": "17"
+        }
+      ],
+      "format": {
+        "duration": "1.700000"
+      }
+    },
+    "decode_exit_code": 0,
+    "decode_errors": ""
+  },
+  "result_sha256": "1b87e2d29b084d44ff44c216747c8fa7f981ec398de77931d07b8bdaae008d8c",
+  "score_sha256": "50e0a76e62566310f70feb18acef4cf3759ce9d67c76c4ce8e9598ca39924f9d",
+  "limitations": [
+    "One task and seed only",
+    "External API model alias is mutable",
+    "No campaign or statistical reproduction claim"
+  ]
+}

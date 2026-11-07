@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaos-libero-harness"
+version = "0.1.1"
+description = "Original RoboRSI CaseRunner and Agent protocol over the MetaRoboOS gateway"
+requires-python = ">=3.10,<3.13"
+dependencies = ["metaos-runtime>=0.2,<0.3", "roborsi>=0.1,<0.2"]
+
+[project.optional-dependencies]
+original-agent = ["roborsi-agent-27b==1.0.0"]
+
+[project.scripts]
+metaos-libero-harness = "metaos_libero_harness:main"
+metaos-libero-agent = "metaos_libero_harness.agent_service:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,14 @@
+schema_version: 1
+run_id: counter-demo
+results_root: results
+workspace: runtime
+lease_root: leases
+max_concurrent: 2
+timeout_s: 10.0
+case_timeout_s: 90.0
+lease_timeout_s: 90.0
+deployments:
+  agent:
+    backend: local
+  environment:
+    backend: local

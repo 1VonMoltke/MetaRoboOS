@@ -1,0 +1,541 @@
+{
+  "status": "passed",
+  "created_at": "2026-11-04T08:11:34.025206+00:00",
+  "demo": "/data3/xzx/MetaRoboOS/modularize-demo",
+  "work": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression",
+  "component": "model.manual_counter",
+  "distribution": "roborsi-manual-counter",
+  "version": "1.0.0",
+  "checks": [
+    {
+      "name": "external_entry_point",
+      "status": "passed",
+      "distribution": "roborsi-manual-counter",
+      "component": "model.manual_counter"
+    },
+    {
+      "name": "sdk_only_plugin",
+      "status": "passed",
+      "unit_tests": 7,
+      "core_installed": false
+    },
+    {
+      "name": "same_workflow_model_replacement",
+      "status": "passed",
+      "baseline": {
+        "aggregate_score": 1.0,
+        "native_scores": [
+          {
+            "position": 5,
+            "physical_steps": 5,
+            "goal": 5
+          },
+          {
+            "position": 4,
+            "physical_steps": 4,
+            "goal": 4
+          }
+        ],
+        "physical_steps": 9
+      },
+      "manual": {
+        "aggregate_score": 1.0,
+        "native_scores": [
+          {
+            "position": 6,
+            "physical_steps": 3,
+            "goal": 5
+          },
+          {
+            "position": 4,
+            "physical_steps": 2,
+            "goal": 4
+          }
+        ],
+        "physical_steps": 5
+      },
+      "unchanged_components": [
+        "environment",
+        "agent",
+        "memory"
+      ],
+      "core_unchanged": true
+    },
+    {
+      "name": "invalid-config",
+      "status": "passed"
+    },
+    {
+      "name": "incompatible-version",
+      "status": "passed"
+    },
+    {
+      "name": "lock-drift",
+      "status": "passed"
+    },
+    {
+      "name": "offline_relocated_cold_run",
+      "status": "passed",
+      "deployment": "0e4c9afb238c69353d6ff2f29aa13c4f782cb0b5beea61dc5d22b856e17abae7",
+      "assembly": "bb0c5e3a9017df0d7ff1feb24bcd1c7ef0f05091b760fb9f71d105216dfc7c09",
+      "original_project_removed": true,
+      "imported_modules": {
+        "roborsi": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/lib/python3.11/site-packages/roborsi/__init__.py",
+        "roborsi.contracts": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/lib/python3.11/site-packages/roborsi/contracts/__init__.py",
+        "roborsi_manual_counter": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/lib/python3.11/site-packages/roborsi_manual_counter/__init__.py",
+        "roborsi_example_component": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/lib/python3.11/site-packages/roborsi_example_component/__init__.py"
+      },
+      "result": {
+        "aggregate_score": 1.0,
+        "native_scores": [
+          {
+            "position": 6,
+            "physical_steps": 3,
+            "goal": 5
+          },
+          {
+            "position": 4,
+            "physical_steps": 2,
+            "goal": 4
+          }
+        ],
+        "physical_steps": 5
+      }
+    },
+    {
+      "name": "tamper_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "plugin_removal_and_restore",
+      "status": "passed",
+      "core_unchanged": true,
+      "unrelated_plugins_preserved": true
+    },
+    {
+      "name": "owned_runtime_cleanup",
+      "status": "passed",
+      "records": [
+        {
+          "root": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline",
+          "empty_ledgers": [
+            "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline/leases/ledger.json"
+          ],
+          "cleaned_pids": [
+            663254,
+            663393,
+            663395,
+            663430,
+            663450
+          ]
+        },
+        {
+          "root": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+          "empty_ledgers": [
+            "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/leases/ledger.json"
+          ],
+          "cleaned_pids": [
+            664618,
+            664737,
+            664749,
+            664771,
+            664802
+          ]
+        },
+        {
+          "root": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold-run",
+          "empty_ledgers": [
+            "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold-run/project/leases/ledger.json"
+          ],
+          "cleaned_pids": [
+            668449,
+            668736,
+            668747,
+            668794,
+            668816
+          ]
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "components",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.components",
+        "list"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/components.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/components.stderr"
+    },
+    {
+      "name": "describe-model",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.components",
+        "describe",
+        "model.manual_counter"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/describe-model.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/describe-model.stderr"
+    },
+    {
+      "name": "plan-baseline",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline/assembly.yaml",
+        "--run-spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline/run.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline",
+        "--dry-run",
+        "--lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/baseline.lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/plan-baseline.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/plan-baseline.stderr"
+    },
+    {
+      "name": "run-baseline",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline/assembly.yaml",
+        "--run-spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline/run.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-baseline",
+        "--expect-lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/baseline.lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/run-baseline.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/run-baseline.stderr"
+    },
+    {
+      "name": "plan-manual",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/assembly.yaml",
+        "--run-spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/run.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--dry-run",
+        "--lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/manual.lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/plan-manual.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/plan-manual.stderr"
+    },
+    {
+      "name": "run-manual",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/assembly.yaml",
+        "--run-spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/run.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--expect-lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/manual.lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/run-manual.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/run-manual.stderr"
+    },
+    {
+      "name": "invalid-config",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/negative/invalid-config.json",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--dry-run"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/invalid-config.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/invalid-config.stderr"
+    },
+    {
+      "name": "incompatible-version",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/negative/incompatible-version.json",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--dry-run"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/incompatible-version.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/incompatible-version.stderr"
+    },
+    {
+      "name": "lock-drift",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/negative/lock-drift.json",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--dry-run",
+        "--expect-lock",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/manual.lock.json"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/lock-drift.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/lock-drift.stderr"
+    },
+    {
+      "name": "export",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.deployment",
+        "export",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/assembly.yaml",
+        "--run-spec",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual/run.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/project-manual",
+        "--wheelhouse",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/wheels",
+        "--output",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/export/manual-deployment"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/export.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/export.stderr"
+    },
+    {
+      "name": "cold-install",
+      "argv": [
+        "/opt/miniconda3/bin/python",
+        "-I",
+        "-B",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment/install.py",
+        "--target",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold",
+        "--expect-fingerprint",
+        "0e4c9afb238c69353d6ff2f29aa13c4f782cb0b5beea61dc5d22b856e17abae7"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-install.stderr"
+    },
+    {
+      "name": "cold-verify",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.deployment",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment",
+        "--installed",
+        "--expect-fingerprint",
+        "0e4c9afb238c69353d6ff2f29aa13c4f782cb0b5beea61dc5d22b856e17abae7"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-verify.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-verify.stderr"
+    },
+    {
+      "name": "cold-imports",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nimport roborsi, roborsi.contracts, roborsi_manual_counter, roborsi_example_component\npaths = {m.__name__: str(Path(m.__file__).resolve()) for m in\n         [roborsi, roborsi.contracts, roborsi_manual_counter, roborsi_example_component]}\nif not all(Path(p).is_relative_to(Path(sys.prefix).resolve()) for p in paths.values()):\n    raise RuntimeError('Module imported outside the cold environment')\nprint(json.dumps(paths))\n"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-imports.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-imports.stderr"
+    },
+    {
+      "name": "cold-run",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.deployment",
+        "run",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment",
+        "--workspace",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold-run",
+        "--expect-fingerprint",
+        "0e4c9afb238c69353d6ff2f29aa13c4f782cb0b5beea61dc5d22b856e17abae7"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-run.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/cold-run.stderr"
+    },
+    {
+      "name": "tamper",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.deployment",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/negative/corrupt-deployment"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/tamper.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/tamper.stderr"
+    },
+    {
+      "name": "uninstall-model",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "uninstall",
+        "-y",
+        "roborsi-manual-counter"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/uninstall-model.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/uninstall-model.stderr"
+    },
+    {
+      "name": "components-after-removal",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.components",
+        "list"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/components-after-removal.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/components-after-removal.stderr"
+    },
+    {
+      "name": "missing-model",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.assembly",
+        "--assembly",
+        "/data3/xzx/MetaRoboOS/modularize-demo/configs/assemblies/manual.yaml",
+        "--root",
+        "/data3/xzx/MetaRoboOS/modularize-demo",
+        "--dry-run"
+      ],
+      "exit_code": 2,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/missing-model.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/missing-model.stderr"
+    },
+    {
+      "name": "reinstall-model",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "install",
+        "--no-index",
+        "--no-cache-dir",
+        "--no-deps",
+        "--find-links",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/wheels",
+        "roborsi-manual-counter==1.0.0"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/reinstall-model.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/reinstall-model.stderr"
+    },
+    {
+      "name": "verify-restored-install",
+      "argv": [
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+        "-I",
+        "-B",
+        "-m",
+        "roborsi.deployment",
+        "verify",
+        "--bundle",
+        "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment",
+        "--installed"
+      ],
+      "exit_code": 0,
+      "stdout": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/verify-restored-install.stdout",
+      "stderr": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/logs/verify-restored-install.stderr"
+    }
+  ],
+  "artifacts": {
+    "plugin_wheel": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/wheels/roborsi_manual_counter-1.0.0-py3-none-any.whl",
+    "producer_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/producer/bin/python",
+    "cold_python": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold/bin/python",
+    "deployment": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/relocated/manual-deployment",
+    "cold_workspace": "/data3/xzx/MetaRoboOS/work/p1p2-final-03/p0-regression/demo-regression/cold-run"
+  },
+  "source_deployment": "bd72801846be41e0c40fe412e6a128f4fc97bc2774de2987c4e8aa8ca7cc8f77",
+  "limits": [
+    "Deterministic counting model, not an LLM or embodied policy.",
+    "No GPU, LIBERO physics, or real 27B benchmark is exercised.",
+    "Frozen dependency wheels target CPython 3.11 / Linux x86_64; upstream snapshot provenance is retained."
+  ]
+}

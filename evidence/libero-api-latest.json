@@ -1,0 +1,48 @@
+{
+  "status": "success",
+  "updated_at": "2026-11-06T03:57:43.895001+00:00",
+  "task_id": "libero_spatial_task-t00-i00",
+  "seed": 0,
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "base_url": "https://api.siliconflow.cn/v1",
+  "score": 1.0,
+  "completed_env_steps": 303,
+  "decision_steps": 64,
+  "model_calls_by_purpose": {
+    "agent": 26,
+    "context_compression": 16
+  },
+  "cleanup_confirmed": true,
+  "experiment_directory": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02",
+  "evidence": {
+    "report": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/report.json",
+      "sha256": "2d0e382615437e804aab77f7b9ce48c3e83491be3d2db6a4aed02e911cbb89ea"
+    },
+    "result": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/run/results/metaos-7c835a51a785/single-task/result.json",
+      "sha256": "3ffe5b4143389ca15c82d902410b6c4f8415b7d23613cd1b082fc431c88b4dd0"
+    },
+    "native_score": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/run/results/metaos-7c835a51a785/single-task/native/score.json",
+      "sha256": "f4e16a6197d7266edc012362a256c7cfd1f344530707dae15db3de17eb2682b3"
+    },
+    "bundle": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/bundle/bundle.json",
+      "sha256": "d14fe080eb6d9aae04a98fc01b7a65f4375d0491c0ca338eee80382cbd7d4a26"
+    },
+    "agent_trace": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/run/results/metaos-7c835a51a785/single-task/agent/trace/events.jsonl",
+      "sha256": "6136551c3f089e91e019592fb800719df489ec296f2065cd06d32213d81b99c9"
+    },
+    "gateway_trace": {
+      "path": "/data3/xzx/MetaRoboOS/work/libero-api-task00-20261105-02/run/results/metaos-7c835a51a785/single-task/gateway-commands.jsonl",
+      "sha256": "a9a3a27dfd3cc5e19981186aaab2b6d4c7ae247d6928c8ce102fe3b928e3f419"
+    },
+    "recipe_tests": {
+      "path": "/data3/xzx/MetaRoboOS/evidence/api-recipe-tests-latest.json",
+      "sha256": "c8fd84d1ca0b8b20da4e6878c58c73c4d6b4b9ea891c440256957946314613d7"
+    }
+  },
+  "scope": "One original task with API planner; not the original local 27B acceptance or a full benchmark."
+}

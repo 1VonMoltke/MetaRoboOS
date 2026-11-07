@@ -1,0 +1,62 @@
+{
+  "status": "integration_installed_protocol_and_composition_verified",
+  "created_at": "2026-11-06T07:13:32.454047+00:00",
+  "scope": "RoboCasa365 Target50 plugin and local assembly integration; fixture validation only",
+  "native_task_tested": false,
+  "model_inference": false,
+  "native_image_built": false,
+  "native_image_qualified": false,
+  "docker_started": false,
+  "versions": {
+    "metaos-robocasa-device": "0.1.0",
+    "metaos-robocasa-harness": "0.1.0"
+  },
+  "checks": {
+    "device_tests": 9,
+    "harness_tests": 16,
+    "icl_cells_verified": 340,
+    "local_composition_regression_tests": 12,
+    "shared_http_protocol": "passed",
+    "local_plan_build_verify": "passed",
+    "existing_libero_bundle_verify": "passed",
+    "source_wheel_and_delivery_hashes": "passed"
+  },
+  "artifacts": {
+    "workspace": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106",
+    "installation": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/installation.json",
+    "verification": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/verification.json",
+    "os_python": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/os-env/bin/python",
+    "harness_python": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/harness-env/bin/python",
+    "native_context": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/native-context",
+    "fixture_bundle": "/data3/xzx/MetaRoboOS/work/robocasa-integration-20261106/fixture-bundle",
+    "fixture_bundle_is_experiment": false
+  },
+  "evidence_sha256": {
+    "installation.json": "66ac5e001447c99fd174c29a3d2e100b559ce24917d668f43a4c93f39dfc0198",
+    "verification.json": "eed98b696cf1b454917402cab00f08d34c6e8c0fa8c0a92c36e3d4725036e6f4",
+    "local-regression.json": "c16df21f7d82777c302acd289ecefdb86e9507961b5afed73bc3cc24fdc640a1",
+    "device-tests.json": "e2e18d935514155e55034dc55eda09b89fbd334c9f0d43efedd577d07985be32",
+    "harness-tests.json": "12b19a7b097361a906abb537cac14e93176a04cf93279ef368ff83db9c387710",
+    "asset-inventory.json": "b52d6d73d97879692ff374bebe2dfddf2829a6dd26cf43d0538d0593aaeebda3",
+    "build.json": "1a2d4adb297da46bbfec0fe2aa238bee2329d5d52ecb2eca3c2b89ed27fe41ce"
+  },
+  "source_sha256": {
+    "plugins/robocasa-device/pyproject.toml": "33d5c66f63ccfdd1aff485a07e1707e8bcb88dac9fec79fb82329f7816744cf7",
+    "plugins/robocasa-device/src/metaos_robocasa_device/__init__.py": "60e00ddad45d70962b7a4f698062b8ed585e66e93c4d4570c9967aa7d3270caa",
+    "plugins/robocasa-harness/pyproject.toml": "6a545e526e18a8fdbcf3fede6e558e8305c0b6c81c216885bc6814f8e99cd577",
+    "plugins/robocasa-harness/src/metaos_robocasa_harness/__init__.py": "02578fac07399da2ea096defb7b55f565c3551c807bbd8a48f2b576345ca843c",
+    "plugins/robocasa-harness/src/metaos_robocasa_harness/__main__.py": "0472e2ffee01c7582c667fb3eb1ef01023e7d584f175cef8cb475e45e6bd1736",
+    "plugins/robocasa-harness/src/metaos_robocasa_harness/agent_service.py": "ee62db63a003314acb291169fdc92f05aca52d3ed46f3849de9179c103a67933",
+    "scripts/bootstrap_robocasa.py": "21256430a645cf5ed15a51683f3a5e31933dfce7d3df56f655e4255cd185fd52",
+    "scripts/prepare_robocasa.py": "a19391b1f089d1822c13cdf2bf4984ce7d3c0ea7895aa11a03e20fbbef68768c",
+    "scripts/local_robocasa_agent.py": "50955c77b2a42ef50ddc7d8918143e5cb1569b186466e95afff194a562760786",
+    "scripts/verify_robocasa.py": "e5bd2ff20a67059eff006d4605a9337fe3a492a6e34739d8ea07b1cd2cf30330",
+    "tests/robocasa/device/test_device.py": "c541b098d7ad76db5a58997675748fe63ef9ae3dfdee2c6cbcf09d847e342645",
+    "tests/robocasa/harness/test_gateway.py": "1cf39e4c052124ff2c5a8d26381cf38e0101418f881d1f83683a87e830563914"
+  },
+  "remaining_acceptance": [
+    "Build/load the pinned native RoboCasa benchmark image",
+    "Real GPU/RLDX reset/action and teardown qualification",
+    "Real API Agent task score/media/trace qualification (intentionally not performed)"
+  ]
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""Workspace shortcut for the independently installed campaign module."""
+import os
+from pathlib import Path
+import sys
+
+python = Path(__file__).absolute().parent / "work/roborsi-campaign/harness-env/bin/python"
+if not python.exists():
+    raise SystemExit("Install metaos-roborsi-campaign in work/roborsi-campaign/harness-env first; see docs/roborsi-campaign.md")
+os.execv(str(python), [str(python), "-I", "-B", "-m", "metaos_roborsi_campaign.cli", *sys.argv[1:]])
